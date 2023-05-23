@@ -1,0 +1,16 @@
+.App {
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(
+		28deg,
+		rgba(153, 134, 176, 1) 0%,
+		rgba(171, 212, 215, 1) 100%
+	);
+}
+
+.App-header {
+	background-color: #f0f0f0;
+	box-shadow: 1px 1px 50px 1px #c2c2c2;
+	display: flex;
+	justify-content: center;
+}
