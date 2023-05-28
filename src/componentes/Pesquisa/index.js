@@ -10,26 +10,28 @@ const PesquisaContainer = styled.section`
 `
 const Titulo = styled.h2`
     font-size: 2.5rem;
-    margin: 2em 0 0 0;
+    margin: 2em 0 0.5em 0;
 `
 const Subtitulo = styled.h3`
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 1em;
 `
 
 const CardLivros = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 60px;
+    margin: 60px 0 60px 0;
+    justify-content: center;
 `
 
 const CardLivro = styled.div`
     background: rgba(255, 255, 255, 0.1);
-    padding: 1em;
+    padding: 0.9em;
     border-radius: 24px;
-    width: 235px;
-    transition: all 200ms;
+    width: 210px;
+    transition: all 300ms;
     text-align: center;
 
     &:hover {
@@ -44,7 +46,7 @@ const CardLivro = styled.div`
 
     img {
         height: 280px;
-        border: 1px solid #f0f0f0;
+        border: 1px solid #b9b9b9;
         border-radius: 8px;
     }
 `

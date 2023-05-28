@@ -9,6 +9,7 @@ const Icone = styled.li`
 const Icones = styled.ul`
     display: flex;
     gap: 30px;
+    cursor: pointer;
 `
 
 const icones = [perfil, sacola]
