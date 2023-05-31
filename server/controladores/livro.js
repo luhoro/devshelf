@@ -1,6 +1,9 @@
+const { getTodosLivros } = require('../servicos/livro');
+
 function getLivros(request, response) {
     try {
-        response.send('Bonjour monsieur babyyyy')
+        const livros = getTodosLivros()
+        response.send(livros)
     } catch (error) {
         response.status(500)
         response.send(error.message)
