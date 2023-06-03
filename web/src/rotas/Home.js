@@ -1,8 +1,7 @@
-import Header from './componentes/Header'
-import Pesquisa from './componentes/Pesquisa'
-import UltimosLancamentos from './componentes/UltimosLancamentos'
-import CardRecomenda from './componentes/CardRecomenda'
-import ImagemLivro from './imagens/livro2.png'
+import Pesquisa from '../componentes/Pesquisa'
+import UltimosLancamentos from '../componentes/UltimosLancamentos'
+import CardRecomenda from '../componentes/CardRecomenda'
+import ImagemLivro from '../imagens/livro2.png'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
@@ -12,10 +11,9 @@ const AppContainer = styled.div`
   padding-bottom: 50px;
 `
 
-function App() {
+function Home() {
   return (
     <AppContainer>
-      <Header />
       <Pesquisa />
       <UltimosLancamentos />
       <CardRecomenda
@@ -28,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

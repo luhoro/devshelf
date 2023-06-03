@@ -3,7 +3,7 @@ import { Titulo } from '../Titulo'
 import styled from 'styled-components'
 
 const UltimosLancamentosContainer = styled.section`
-    background-color: #c7c7c770;
+    background-color:  #ffffff30;
     padding: 50px 0 50px 0;
     display: flex;
     flex-direction: column;
@@ -17,9 +17,13 @@ const NovosLivrosContainer = styled.div`
 `
 
 const Livros = styled.div`
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color:  #ffffff20;
     padding: 1em;
     border-radius: 24px;
+    transition: all 300ms;
+    &:hover {
+        background-color:  #ffffff40;
+    }
 
     img {
         width: 100%;
