@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Input from '../Input'
-import { useState } from 'react'
-import { livros } from './dadosPesquisa'
+import { useState, useEffect } from 'react'
+import { getLivros } from '../../servicos/livros'
 
 const PesquisaContainer = styled.section`
     display: flex;
@@ -17,7 +17,6 @@ const Subtitulo = styled.h3`
     font-weight: 400;
     margin-bottom: 1em;
 `
-
 const CardLivros = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +24,6 @@ const CardLivros = styled.div`
     margin: 60px 0 60px 0;
     justify-content: center;
 `
-
 const CardLivro = styled.div`
     background: rgba(255, 255, 255, 0.1);
     padding: 0.9em;
@@ -53,16 +51,26 @@ const CardLivro = styled.div`
 
 function Pesquisa() {
     const [livrosPesquisados, setLivrosPesquisados] = useState([])
+    const [livros, setLivros] = useState([])
+
+    useEffect(() => {
+        fetchLivros()
+    }, [])
+
+    async function fetchLivros() {
+        const livrosDaAPI = await getLivros()
+        setLivros(livrosDaAPI)
+    }
 
     return (
         <PesquisaContainer>
             <Titulo>Já sabe por onde começar?</Titulo>
             <Subtitulo>Encontre seu livro em nossa estante</Subtitulo>
             <Input
-                placeholder='Escreva sua próxima leitura'
+                placeholder="Escreva sua próxima leitura"
                 onBlur={evento => {
                     const textoDigitado = evento.target.value
-                    const resultadoPesquisa = livros.filter(livro => livro.nome.includes(textoDigitado));
+                    const resultadoPesquisa = livros.filter(livro => livro.nome.includes(textoDigitado))
                     setLivrosPesquisados(resultadoPesquisa)
                 }}
             />
@@ -70,7 +78,7 @@ function Pesquisa() {
                 {livrosPesquisados.map(livro => (
                     <CardLivro>
                         <p>{livro.nome}</p>
-                        <img src={livro.src} alt="" />
+                        <img src={livro.src} alt="book" />
                     </CardLivro>
                 ))}
             </CardLivros>

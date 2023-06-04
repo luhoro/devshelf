@@ -36,9 +36,6 @@ function postLivro(req, res) {
             insereLivro(livroNovo)
             res.status(201)
             res.send('Livro inserido com sucesso!')
-            // } else if (!req.body.id) {
-            //     res.status(422)
-            //     res.send('O campo id é obrigatório')
         } else {
             res.status(422)
             res.send('Os campos "nome" e "id" são obrigatórios')
