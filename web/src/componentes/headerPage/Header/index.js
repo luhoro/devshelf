@@ -1,4 +1,4 @@
-import Logo from '../Logo'
+import Logo from '../../Logo'
 import OpcoesHeader from '../OpcoesHeader'
 import IconesHeader from '../IconesHeader'
 import styled from 'styled-components'
@@ -10,7 +10,7 @@ const HeaderContainer = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 30px;
+	gap: 50px;
     padding: 20px 0;
 `
 
