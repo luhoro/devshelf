@@ -24,28 +24,31 @@ const CardLivros = styled.div`
     justify-content: center;
 `
 const CardLivro = styled.div`
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.9em;
-    border-radius: 24px;
-    width: 210px;
-    transition: all 300ms;
-    text-align: center;
+display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-radius: 24px;
+  width: 230px;
+  height: 370px;
+  transition: all 300ms;
+  text-align: center;
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  p {
+    padding: 0 0 10px 0;
+    height: 35px;
+  }
 
-    &:hover {
-        background: rgba(255, 255, 255, 0.3);
-    }
-
-    p {
-        margin: 0;
-        padding: 0 0 10px 0;
-        height: 35px;
-    }
-
-    img {
-        height: 280px;
-        border: 1px solid #b9b9b9;
-        border-radius: 8px;
-    }
+  img {
+    height: 280px;
+    box-shadow: 1px 1px 10px #d9d9d9;
+    border-radius: 8px;
+    width: 100%;
+  }
 `
 
 function Favoritos() {

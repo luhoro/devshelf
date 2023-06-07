@@ -1,6 +1,6 @@
 import Pesquisa from '../componentes/Pesquisa'
 import UltimosLancamentos from '../componentes/UltimosLancamentos'
-import CardRecomenda from '../componentes/CardRecomenda'
+import CardRecomenda from '../componentes/cards/CardRecomenda'
 import ImagemLivro from '../imagens/livro2.png'
 import styled from 'styled-components'
 
@@ -18,9 +18,9 @@ function Home() {
       <UltimosLancamentos />
       <CardRecomenda
         titulo='Talvez você se interesse por..'
-        subtitulo='Angular 11'
-        descricao='Construindo uma aplicação com a plataforma google'
-        imagem={ImagemLivro}
+        subtitulo='Primeiros passos com React'
+        descricao='Construindo aplicações web'
+        imagem={"https://m.media-amazon.com/images/I/41V-6PYI5bL.jpg"}
       />
     </AppContainer>
   );

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Titulo } from '../Titulo'
+import { Titulo } from '../../Titulo'
 
 const Card = styled.div`
     width: 100%;
