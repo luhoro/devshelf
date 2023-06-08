@@ -12,6 +12,12 @@ const Opcao = styled.li`
   cursor: pointer;
   text-transform: uppercase;
   padding: 12px 0;
+  font-weight: bold;
+  transition: 300ms;
+  &:hover {
+    translate: 0 -3px;
+  }
+
 `;
 
 const textoOpcoes = ["Favoritos", "Estante"];

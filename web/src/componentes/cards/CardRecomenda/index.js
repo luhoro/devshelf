@@ -23,18 +23,15 @@ const Subtitulo = styled.h4`
     margin: 0;
     font-weight: bold;
 `
-
 const Descricao = styled.p`
     width: 70%;
 `
-
 const ImgLivro = styled.img`
     margin: 0;    
     width: 160px;
     border-radius: 8px;
     border: 1px solid #b9b9b9;
 `
-
 const Botao = styled.button`
     padding: 6px;
     background-color: #50505070;
