@@ -1,7 +1,6 @@
 import Pesquisa from '../componentes/Pesquisa'
 import UltimosLancamentos from '../componentes/UltimosLancamentos'
 import CardRecomenda from '../componentes/cards/CardRecomenda'
-import ImagemLivro from '../imagens/livro2.png'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
@@ -23,7 +22,7 @@ function Home() {
         imagem={"https://m.media-amazon.com/images/I/41V-6PYI5bL.jpg"}
       />
     </AppContainer>
-  );
+  )
 }
 
 export default Home;

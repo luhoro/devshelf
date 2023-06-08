@@ -30,15 +30,21 @@ const ImgLivro = styled.img`
     margin: 0;    
     width: 160px;
     border-radius: 8px;
-    border: 1px solid #b9b9b9;
+    /* box-shadow: 1px 1px 10px #b9b9b9; */
+
 `
 const Botao = styled.button`
     padding: 6px;
-    background-color: #50505070;
+    background-color: #9986b060;
     border: none;
     border-radius: 8px;
     width: 160px;
     color: #ffffff;
+    transition: 300ms;
+    cursor: pointer;
+    &:hover {
+        background-color: #9986b090;
+    }
 `
 
 function CardRecomenda({ titulo, subtitulo, descricao, imagem }) {

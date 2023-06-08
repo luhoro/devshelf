@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import Input from '../Input'
 import CardLivro from '../cards/CardLivro'
+import { Titulo } from '../Titulo'
+import ButtonFavorito from '../cards/ButtonFavorito'
 import { useState, useEffect } from 'react'
 import { getLivros } from '../../servicos/livros'
 import { postFavorito } from '../../servicos/favoritos'
@@ -9,22 +11,21 @@ const PesquisaContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
-const Titulo = styled.h2`
-  font-size: 2.5rem;
-  margin: 2em 0 0.5em 0;
+  padding-top: 120px;
+
 `
 const Subtitulo = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 1em;
+  margin: 1.2em 0;
 `
 const CardLivros = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 60px 0 60px 0;
+  padding: 80px 0 ;
   justify-content: center;
+  width: 98%;
 `
 
 function Pesquisa() {
@@ -47,7 +48,9 @@ function Pesquisa() {
 
   return (
     <PesquisaContainer>
-      <Titulo>Já sabe por onde começar?</Titulo>
+      <Titulo cor="#000000" tamanhoFonte="2.3rem">
+        Já sabe por onde começar?
+      </Titulo>
       <Subtitulo>Encontre seu livro em nossa estante</Subtitulo>
       <Input
         placeholder="Escreva sua próxima leitura"
@@ -61,7 +64,14 @@ function Pesquisa() {
       />
       <CardLivros>
         {livrosPesquisados.map((livro) => (
-          <CardLivro nome={livro.nome} src={livro.src} id={livro.id} />
+          <CardLivro>
+            <p>{livro.nome}</p>
+            <img src={livro.src} alt="book" />
+
+            <ButtonFavorito
+              onClick={() => insertFavorito(livro.id, livro.nome)}
+            />
+          </CardLivro>
         ))}
       </CardLivros>
     </PesquisaContainer>

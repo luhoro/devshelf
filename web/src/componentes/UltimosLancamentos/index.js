@@ -24,7 +24,10 @@ function UltimosLancamentos() {
       </Titulo>
       <NovosLivrosContainer>
         {livros.map((livro) => (
-          <CardLivro nome={livro.nome} src={livro.src} id={livro.id} />
+          <CardLivro nome={livro.nome} src={livro.src} id={livro.id}>
+            <p>{livro.nome}</p>
+            <img src={livro.src} alt="book" />
+          </CardLivro>
         ))}
       </NovosLivrosContainer>
     </UltimosLancamentosContainer>
