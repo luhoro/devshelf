@@ -12,7 +12,6 @@ const PesquisaContainer = styled.section`
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-
 `
 const Subtitulo = styled.h3`
   font-size: 1.5rem;
@@ -24,7 +23,7 @@ const CardLivros = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 80px 20px ;
+  padding: 80px 20px;
   justify-content: center;
   width: 98%;
 `
@@ -47,6 +46,16 @@ function Pesquisa() {
     alert(`Livro "${nome}" inserido aos favoritos`)
   }
 
+  function PesquisarLivro(evento) {
+    const textoDigitado = evento.target.value.toLowerCase()
+    const resultadoPesquisa = livros.length
+      ? livros.filter((livro) =>
+          livro.nome.toLowerCase().includes(textoDigitado)
+        )
+      : []
+    setLivrosPesquisados(resultadoPesquisa)
+  }
+
   return (
     <PesquisaContainer>
       <Titulo cor="#000000" tamanhoFonte="2.3rem">
@@ -55,13 +64,8 @@ function Pesquisa() {
       <Subtitulo>Encontre seu livro em nossa estante</Subtitulo>
       <Input
         placeholder="Escreva sua próxima leitura"
-        onBlur={(evento) => {
-          const textoDigitado = evento.target.value
-          const resultadoPesquisa = livros.filter((livro) =>
-            livro.nome.includes(textoDigitado)
-          )
-          setLivrosPesquisados(resultadoPesquisa)
-        }}
+        onBlur={(evento) => PesquisarLivro(evento)}
+        onKeyPress={evento => evento.key === 'Enter' ? PesquisarLivro(evento) : null}
       />
       <CardLivros>
         {livrosPesquisados.map((livro) => (

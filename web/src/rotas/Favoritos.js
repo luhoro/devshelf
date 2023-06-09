@@ -6,7 +6,7 @@ import CardLivro from '../componentes/cards/CardLivro'
 import Footer from '../componentes/Footer'
 
 const AppContainer = styled.div`
-  width: 100%;
+  height: 100%;
   background-image: linear-gradient(
     90deg,
     rgba(153, 134, 176, 1) 0%,
@@ -21,6 +21,7 @@ const Titulo = styled.h2`
   padding-top: 35px;
 `
 const CardLivros = styled.div`
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
