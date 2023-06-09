@@ -1,18 +1,102 @@
 [
   {
     "id": "1",
-    "nome": "Entendendo Algoritmos"
+    "nome": "Entendendo Algoritmos",
+    "src": "https://m.media-amazon.com/images/I/519UnakaarL.jpg"
   },
   {
     "id": "2",
-    "nome": "Arquitetura Limpa"
+    "nome": "Arquitetura Limpa",
+    "src": "https://m.media-amazon.com/images/I/41Zd8i94hwL.jpg"
   },
   {
     "id": "3",
-    "nome": "Código Limpo"
+    "nome": "React - Aprenda Praticando:",
+    "src": "https://m.media-amazon.com/images/I/51ATqZkXSzL._SX363_BO1,204,203,200_.jpg"
   },
   {
     "id": "4",
-    "nome": "Guia básico de Javascript"
+    "nome": "JavaScript - O guia definitivo",
+    "src": "https://m.media-amazon.com/images/I/91z1xY4ppaL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "5",
+    "nome": "Algoritmos para viver",
+    "src": "https://m.media-amazon.com/images/I/51DP8x8cULL.jpg"
+  },
+  {
+    "id": "6",
+    "nome": "O Programador Pragmático: De Aprendiz a Mestre",
+    "src": "https://m.media-amazon.com/images/I/41WH7HFsbzL.jpg"
+  },
+  {
+    "id": "7",
+    "nome": "Lógica de Programação e Algoritmos com JavaScript",
+    "src": "https://m.media-amazon.com/images/I/71X7hMhMEUL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "8",
+    "nome": "Dominando JavaScript",
+    "src": "https://m.media-amazon.com/images/I/41WmUvyspmL.jpg"
+  },
+  {
+    "id": "9",
+    "nome": "Refatoração: Aperfeiçoando o Design de Códigos Existentes",
+    "src": "https://m.media-amazon.com/images/I/81sTm5M7wjL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "10",
+    "nome": "Aprendendo Lógica de Programação do Zero",
+    "src": "https://m.media-amazon.com/images/I/41hmKteLUvL.jpg"
+  },
+  {
+    "id": "11",
+    "nome": "Como ser um programador melhor",
+    "src": "https://m.media-amazon.com/images/I/71RWTuYLQiL._AC_UF350,350_QL50_.jpg"
+  },
+  {
+    "id": "12",
+    "nome": "Dominando o CSS",
+    "src": "https://m.media-amazon.com/images/I/41F2OubLyaL.jpg"
+  },
+  {
+    "id": "13",
+    "nome": "Primeiros passos com React",
+    "src": "https://m.media-amazon.com/images/I/41V-6PYI5bL.jpg"
+  },
+  {
+    "id": "14",
+    "nome": "O Codificador Limpo",
+    "src": "https://altabooks.com.br/wp-content/uploads/2021/07/site-da-editora.jpg"
+  },
+  {
+    "id": "15",
+    "nome": "14 Hábitos de Desenvolvedores Altamente Produtivos",
+    "src": "https://m.media-amazon.com/images/I/41Xkqy2rMDL.jpg"
+  },
+  {
+    "id": "16",
+    "nome": "Guia Prático: HTML & CSS",
+    "src": "https://u3r3f6s2.rocketcdn.me/wp-content/uploads/2020/03/image12.png.webp"
+  },
+  {
+    "id": "17",
+    "nome": "Algoritmos E Lógica Da Programação",
+    "src": "https://m.media-amazon.com/images/I/6181C8xqUPL._AC_UY218_.jpg"
+  },
+  {
+    "id": "18",
+    "nome": "Estruturas de Dados e Algoritmos com JavaScript",
+    "src": "https://m.media-amazon.com/images/I/71KGa1y8eaL._AC_UY218_.jpg"
+  },
+  {
+    "id": "19",
+    "nome": "Código Limpo",
+    "src": "https://altabooks.com.br/wp-content/uploads/2021/07/Codigo_Limpo-scaled.jpg"
+  },
+  {
+    "id": "20",
+    "nome": "React.js Essentials",
+    "src": "https://m.media-amazon.com/images/I/610x+xTdewL._AC_UF1000,1000_QL80_.jpg"
   }
 ]
