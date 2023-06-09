@@ -3,16 +3,15 @@ import styled from 'styled-components'
 import ButtonFavorito from '../componentes/cards/ButtonFavorito'
 import { deleteFavorito, getFavorito } from '../servicos/favoritos'
 import CardLivro from '../componentes/cards/CardLivro'
+import Footer from '../componentes/Footer'
 
 const AppContainer = styled.div`
   width: 100%;
-  height: 100vh;
   background-image: linear-gradient(
     90deg,
     rgba(153, 134, 176, 1) 0%,
     rgba(171, 212, 215, 1) 100%
   );
-  padding-bottom: 50px;
 `
 const Titulo = styled.h2`
   color: #fff;
@@ -25,14 +24,14 @@ const CardLivros = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 60px 0 60px 0;
+  margin: 80px 0;
+  padding: 0 20px;
   justify-content: center;
 `
 
-
 function Favoritos() {
-  const [ favoritos, setFavoritos ] = useState([])
-  
+  const [favoritos, setFavoritos] = useState([])
+
   useEffect(() => {
     fetchFavoritos()
   }, [])
@@ -56,8 +55,8 @@ function Favoritos() {
           ? favoritos.map((favorito) => (
               <CardLivro>
                 <p>{favorito.nome}</p>
-              <img src={favorito.src} alt="book" />
-              
+                <img src={favorito.src} alt="book" />
+
                 <ButtonFavorito
                   onClick={() => deletarFavorito(favorito.id, favorito.nome)}
                 />
@@ -65,6 +64,7 @@ function Favoritos() {
             ))
           : null}
       </CardLivros>
+      <Footer />
     </AppContainer>
   )
 }

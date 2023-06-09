@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { Titulo } from '../../Titulo'
 
 const Card = styled.div`
-    width: 100%;
+    width: 90%;
     max-width: 600px;
-    margin: 80px auto 50px auto;
+    margin: 80px auto;
     padding: 30px 20px;
     display: flex;
     justify-content: space-around;
@@ -28,7 +28,7 @@ const Descricao = styled.p`
 `
 const ImgLivro = styled.img`
     margin: 0;    
-    width: 160px;
+    width: 140px;
     border-radius: 8px;
     /* box-shadow: 1px 1px 10px #b9b9b9; */
 
@@ -38,7 +38,7 @@ const Botao = styled.button`
     background-color: #9986b060;
     border: none;
     border-radius: 8px;
-    width: 160px;
+    width: 140px;
     color: #ffffff;
     transition: 300ms;
     cursor: pointer;
@@ -51,7 +51,7 @@ function CardRecomenda({ titulo, subtitulo, descricao, imagem }) {
     return (
         <Card>
             <div>
-                <Titulo tamanho-fonte="1rem" cor="" >{titulo}</Titulo>
+                <Titulo tamanho-fonte="1rem" alinhamento="start">{titulo}</Titulo>
                 <Subtitulo>{subtitulo}</Subtitulo>
                 <Descricao>{descricao}</Descricao>
             </div>

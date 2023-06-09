@@ -14,6 +14,8 @@ const UltimosLancamentosContainer = styled.section`
 const NovosLivrosContainer = styled.div`
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 `
 
 function UltimosLancamentos() {

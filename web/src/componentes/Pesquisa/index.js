@@ -18,12 +18,13 @@ const Subtitulo = styled.h3`
   font-size: 1.5rem;
   font-weight: 400;
   margin: 1.2em 0;
+  text-align: center;
 `
 const CardLivros = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 80px 0 ;
+  padding: 80px 20px ;
   justify-content: center;
   width: 98%;
 `
@@ -43,7 +44,7 @@ function Pesquisa() {
 
   async function insertFavorito(id, nome) {
     await postFavorito(id)
-    alert(`Livro "${nome}" inserido`)
+    alert(`Livro "${nome}" inserido aos favoritos`)
   }
 
   return (

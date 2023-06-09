@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Opcoes = styled.ul`
   display: flex;
+  align-items: center;
   gap: 30px;
   text-decoration: none;
   height: 100%;
@@ -20,18 +21,17 @@ const Opcao = styled.li`
 
 `;
 
-const textoOpcoes = ["Favoritos", "Estante"];
 
 function OpcoesHeader() {
   return (
     <Opcoes>
-      {textoOpcoes.map((texto) => (
-        <Link to={`/${texto.toLowerCase()}`}>
+
+        <Link to='/favoritos'>
           <Opcao>
-            <p>{texto}</p>
+            <p>Favoritos</p>
           </Opcao>
         </Link>
-      ))}
+      
     </Opcoes>
   );
 }

@@ -8,9 +8,11 @@ const HeaderContainer = styled.header`
 	background-color: #f0f0f0;
 	box-shadow: 1px 1px 50px 1px #c2c2c2;
 	display: flex;
+    flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: 50px;
+	column-gap: 40px;
+    row-gap: 10px;
     padding: 20px 0;
 `
 

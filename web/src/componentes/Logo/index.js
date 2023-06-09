@@ -1,5 +1,5 @@
-import logo from "../../imagens/logo.svg";
-import styled from "styled-components";
+import logo from '../../imagens/logo.svg'
+import styled from 'styled-components'
 
 const LogoContainer = styled.div`
   display: flex;
@@ -11,16 +11,15 @@ const LogoContainer = styled.div`
     translate: 0 -3px;
   }
 
-`;
+`
 
 export default function Logo() {
   return (
     <LogoContainer>
       <img src={logo} alt="Logo" className="logo-img" />
       <p>
-        
-        <strong>Dev</strong>Shelf{" "}
+        <strong>Dev</strong>Shelf{' '}
       </p>
     </LogoContainer>
-  );
+  )
 }

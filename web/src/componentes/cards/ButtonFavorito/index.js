@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const ButtonFavorito = styled.div`
-  background: url('https://img.icons8.com/ios-filled/28/love-circled.png') no-repeat
+  background: url('https://img.icons8.com/ios-filled/25/love-circled.png') no-repeat
     center;
   background-color: #ffffff60;
   border-radius: 50px;
