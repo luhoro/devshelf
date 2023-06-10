@@ -46,7 +46,7 @@ function Pesquisa() {
     alert(`Livro "${nome}" inserido aos favoritos`)
   }
 
-  function PesquisarLivro(evento) {
+  function pesquisarLivro(evento) {
     const textoDigitado = evento.target.value.toLowerCase()
     const resultadoPesquisa = livros.length
       ? livros.filter((livro) =>
@@ -64,8 +64,8 @@ function Pesquisa() {
       <Subtitulo>Encontre seu livro em nossa estante</Subtitulo>
       <Input
         placeholder="Escreva sua próxima leitura"
-        onBlur={(evento) => PesquisarLivro(evento)}
-        onKeyPress={evento => evento.key === 'Enter' ? PesquisarLivro(evento) : null}
+        onBlur={ evento => pesquisarLivro(evento) }
+        onKeyPress={ evento => evento.key === 'Enter' ? pesquisarLivro(evento) : null }
       />
       <CardLivros>
         {livrosPesquisados.map((livro) => (
@@ -74,7 +74,7 @@ function Pesquisa() {
             <img src={livro.src} alt="book" />
 
             <ButtonFavorito
-              onClick={() => insertFavorito(livro.id, livro.nome)}
+              onClick={() =>  insertFavorito(livro.id, livro.nome)}
             />
           </CardLivro>
         ))}

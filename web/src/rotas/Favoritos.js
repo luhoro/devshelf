@@ -21,7 +21,7 @@ const Titulo = styled.h2`
   padding-top: 35px;
 `
 const CardLivros = styled.div`
-  height: fit-content;
+  min-height: 60vh;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
