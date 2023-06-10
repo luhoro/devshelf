@@ -98,5 +98,30 @@
     "id": "20",
     "nome": "React.js Essentials",
     "src": "https://m.media-amazon.com/images/I/610x+xTdewL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "21",
+    "nome": "Algoritmos Funcionais",
+    "src": "https://altabooks.com.br/wp-content/uploads/2021/07/CAPA_AlgoritmosFuncionais_SITE.jpg"
+  },
+  {
+    "id": "22",
+    "nome": "FullStack React",
+    "src": "https://m.media-amazon.com/images/I/71Yd2ACrDcL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "23",
+    "nome": "JavaScript Descomplicado",
+    "src": "https://m.media-amazon.com/images/P/B0888TGYF3.01._SCLZZZZZZZ_SX500_.jpg"
+  },
+  {
+    "id": "24",
+    "nome": "Algoritmos",
+    "src": "https://m.media-amazon.com/images/I/71zBN1+jN-L.jpg"
+  },
+  {
+    "id": "25",
+    "nome": "JavaScript em 20 Passos",
+    "src": "https://terminalroot.com.br/assets/img/js/livros/08-js-livros.jpg"
   }
 ]
