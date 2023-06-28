@@ -2,7 +2,7 @@
 
 ## Descrição
 DevShelf é um site de livros voltados para o público de desenvolvedores web. Possui duas interfaces, sendo uma com todos os livros disponíveis, e outra para livros favoritados pelo usuário.
-O projeto foi realizado utilizando como base o projeto da Formação Full stack: React com Node.js fornecido pela Alura, onde fo
+O projeto foi realizado utilizando como base o projeto da Formação Full stack: React com Node.js fornecido pela Alura, onde foi abordado os principais conceitos de React e Node. Além dos conceitos básicos pude me apronfundar na integração de front e back end.
 
 ## Tecnologias Utilizadas
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -22,11 +22,9 @@ Navegue primeiramente ao repositorio server
 ```
 cd server
 ```
-Certifique de instalar as dependencias
+Certifique de instalar as dependencias utilizando
 ```
-npm i cors 
-npm i express
-npm i nodemon
+npm install
 ```
 
 Inicialize a API
@@ -38,12 +36,9 @@ Volte ao repositório origem e navegue ao reopsitório web
 cd ..
 cd web
 ```
-Certifique de instalar as depêdencias
+Certifique de instalar as depêdencias utilizando
 ```
-npm i axios  
-npm i react-dom 
-npm i react-router-dom
-npm i styled-components
+npm install
 ```
 Inicialize a aplicação
 ```
